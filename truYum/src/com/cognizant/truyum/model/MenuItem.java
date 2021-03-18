@@ -9,6 +9,19 @@ public class MenuItem {
 	private Date dateOfLaunch;
 	private String category;
 	private boolean freeDelivery;
+	
+	
+	public MenuItem(long id, String name, float price, boolean active, Date dateOfLaunch, String category,
+			boolean freeDelivery) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.active = active;
+		this.dateOfLaunch = dateOfLaunch;
+		this.category = category;
+		this.freeDelivery = freeDelivery;
+	}
 	public long getId() {
 		return id;
 	}
