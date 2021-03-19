@@ -31,7 +31,6 @@ public class CartDaoCollectionImpl implements CartDao{
 	}
     @Override
 	public void addCartItem(long userId, long menuItemId) {
-		// TODO Auto-generated method stub
     	List<MenuItem> menuItemList;
 		MenuItemDaoCollectionImpl menuItemDaoCollectionImpl = new MenuItemDaoCollectionImpl();
 		MenuItemDao menuItemDao = menuItemDaoCollectionImpl;
@@ -74,7 +73,6 @@ public class CartDaoCollectionImpl implements CartDao{
 
 	@Override
 	public void removeCartItem(long userId, long menuItemId) {
-		// TODO Auto-generated method stub
 		if (userCarts.containsKey(userId)) {
 			Cart cart = userCarts.get(userId);
 			List<MenuItem> menuItemList = cart.getMenuItemList();
